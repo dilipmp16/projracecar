@@ -1,9 +1,37 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
-    </head>
-    <body>
+	<head>
+		<style>
+		body{
+			background-color: white; 
+			background-position: center;
+			background-size: cover;
+		}
+		#myCanvas
+		{
+			border-width:10px;
+			background-color: white; 
+			border-style:ridge;
+		}
 
-    </body>
+		h1,h4
+		{
+			color: black !important;
+		}
+		</style>		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<title>Car Race</title>
+	</head>
+	<body onload="add();">
+		<center>
+			<h2>Race Car : GAME STATUS: <span id="game_status"></span></h2>
+			<h4>
+				<b class="text-danger">NOTE : </b> PRESS ANY ARROW KEY CONTROL CAR 1, PRESS W -> UP, S-> DOWN, A->LEFT, D->RIGHT TO CONTROL CAR 2
+			</h4>			
+			<canvas id="myCanvas" width="800" height="600"></canvas>
+		</center>
+		<script src="main.js"></script>
+	</body>
 </html>
